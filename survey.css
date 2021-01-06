@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background: palegoldenrod;
+    margin:0 /*auto 30px*/;
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 + p{
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+
+form{
+    box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
+    background-color: thistle;
+    padding: 15px 20px;
+    max-width:450px;
+    margin: 0 auto;
+}
+
+form > div{
+    text-align:left;
+    margin-bottom:30px;
+}
+
+form > div label{
+    display: block;
+    margin-bottom: 9px;
+}
+
+input, select,
+.form-comment textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-recommend input[type="radio"] ,
+.form-improve input[type="checkbox"],
+.form-quality input[type="radio"],
+.form-service input[type="radio"],
+.form-learn input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+/*.form-service{
+    display: flex;
+    justify-content: space-between;
+}*/
+
+a{
+    text-decoration: none;
+    color: indigo;
+}
+
+a:hover{
+    color: blue;
+}
+
+
+button{
+    width: 100%;
+    background-color:coral;
+    padding: 10px;
+    border:1px solid gray;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+button:hover{
+    background: salmon;
+}
+
+
+@media (max-width:700px) {
+    body{ 
+        padding-bottom: 40px;
+        margin:auto 20px;
+    }
+}
